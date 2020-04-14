@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ideias - Casa Criativa</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">   
+</head>
+<body id="page-ideas">
+
+    <div id="container">
+        <header>
+            <a href="/">
+                <img src="/logo.png" alt="Imagem da Logomarca">
+            </a>    
+            <nav>
+                <li><a href="/">Início</a></li>
+                <li><a href="#">Ideias</a></li>
+                <li><a class="button" href="#" onclick="onOff()">Nova Ideia</a></li>
+            </nav>
+        </header>
+        <section id="title">
+            <p>em exibição</p>
+            <h1>Ideias</h1>
+        </section>
+        <main>
+            <section id="ideas">
+                {% include "all_ideas.html"%}
+            </section>
+        </main>
+        <footer>Com ❤ Gabriel Oliveira</footer>
+    </div>
+
+    {% include "modal.html"%}
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
